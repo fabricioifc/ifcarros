@@ -20,7 +20,7 @@ from theme import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('books_cbv/', include('books_cbv.urls', namespace='books_cbv')),
+    path('books/', include('books.urls', namespace='books')),
     url(r'^', include('app.urls')),
     path('', views.home),
 ]
